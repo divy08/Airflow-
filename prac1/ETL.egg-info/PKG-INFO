@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: ETL
+Version: 0.1
+Author: divy
+Author-email: 
+Requires-Dist: pandas
+Requires-Dist: boto3
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: requires-dist

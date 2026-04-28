@@ -1,0 +1,25 @@
+FROM python:3.11-slim
+
+# Set the working directory
+WORKDIR /src
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install apache-airflow-providers-amazon apache-airflow-providers-google
+
+# Copy all project files
+COPY . .
+
+
+# Create data directories
+RUN mkdir -p /data/landing/{s3,gdrive} /data/archive/{s3,gdrive} /data/temp && \
+    chown -R airflow:airflow /data
+
+
+# Copy all project files
+COPY . .
+
+
+# Run the main Python script
+CMD ["python", "dags/gcp_s3_db_dag.py"]

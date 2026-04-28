@@ -1,0 +1,26 @@
+# Core Airflow
+apache-airflow==2.7.2
+
+# Providers
+apache-airflow-providers-amazon
+apache-airflow-providers-google==10.0.0
+apache-airflow-providers-mysql==5.3.0
+apache-airflow-providers-postgres==5.7.0
+apache-airflow-providers-celery==3.3.0
+apache-airflow-providers-redis==3.1.0
+
+# Data processing
+pandas==2.0.3
+openpyxl==3.1.2
+pyarrow==12.0.1
+
+# Database connectors
+mysql-connector-python==8.1.0
+psycopg2-binary==2.9.7
+SQLAlchemy==2.0.20
+
+# Cloud SDKs
+boto3==1.28.57
+google-api-python-client==2.95.0
+google-auth-oauthlib==1.0.0
+

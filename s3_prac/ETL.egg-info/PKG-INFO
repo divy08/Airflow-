@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: ETL
+Version: 0.1
+Author: divy
+Author-email: 
+Requires-Dist: pandas==2.2.2
+Requires-Dist: boto3==1.34.89
+Requires-Dist: pymysql==1.1.0
+Requires-Dist: sqlalchemy==2.0.29
+Requires-Dist: setuptools==69.5.1
+Dynamic: author
+Dynamic: requires-dist

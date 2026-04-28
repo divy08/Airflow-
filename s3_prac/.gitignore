@@ -1,0 +1,4 @@
+config/
+testing/
+.env
+ELT.egg-info

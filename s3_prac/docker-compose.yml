@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  etl_app:
+    build: .
+    container_name: divy
+    volumes:
+      - .:/src  
+    working_dir: /src
+    command: python app/main.py
